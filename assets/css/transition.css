@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Awake the Beauty';
-    src: url('/refactored-shemwe/assets/font/awake_the_beauty-webfont.woff2') format('woff2'),
-        url('/refactored-shemwe/assets/font/awake_the_beauty-webfont.woff') format('woff');
+    src: url('../font/awake_the_beauty-webfont.woff2') format('woff2'),
+        url('../font/awake_the_beauty-webfont.woff') format('woff');
     /* Add other font formats here if needed */
 }
 
@@ -27,7 +27,7 @@
 }
 
 .hero-text {
-    font-family: 'Awake the Beauty', sans-serif;
+    font-family: 'Awake the Beauty', cursive;
     /* 'Sofia', */
 }
 
