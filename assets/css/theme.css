@@ -2397,9 +2397,9 @@ body:not(.tt-boxed) .page-header-inner,
 	display: inline-block;
 	font-size: calc(15px + 0.1vw);
 	color: #FFF;
-	font-weight: bold;
+	font-weight: 100;
 	margin-top: 10px;
-	line-height: 1.4;
+	/* line-height: 1.4; */
 }
 
 a.ph-category:hover {

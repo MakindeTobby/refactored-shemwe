@@ -136,7 +136,7 @@
     }
 
     .hero-text.visible {
-        font-size: 65px;
+        font-size: 80px;
         /* Adjust font size for phones when visible */
     }
 }
