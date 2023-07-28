@@ -81,6 +81,8 @@
  * Global variables
 /* ------------------------------------------------------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
 	--tt-main-bg-color: #0a0a0a;
 	/* Template background color. */
@@ -88,6 +90,12 @@
 	/* Template main color. */
 }
 
+@font-face {
+	font-family: 'Awake the Beauty';
+	src: url('../font/awake_the_beauty-webfont.woff2') format('woff2'),
+		url('../font/awake_the_beauty-webfont.woff') format('woff');
+	/* Add other font formats here if needed */
+}
 
 /* ------------------------------------------------------------- *
  * General
@@ -6368,13 +6376,14 @@ video.tt-pci-video {
 	justify-content: center;
 	width: auto !important;
 	height: 100vh;
-	padding: 0 5%;
+	/* padding: 0 5%; */
 }
 
 @media (max-width: 768px) {
 	.tt-portfolio-hover-carousel .swiper-slide {
-		padding: 0 50px;
+		/* padding: 0 50px; */
 	}
+
 }
 
 /* Disable actions until animations are loaded (for "tt-transition" only) */
@@ -6442,13 +6451,26 @@ body.tt-transition .tt-portfolio-hover-carousel.tt-phc-ready::before {
 /* Title */
 .tt-phc-item-title {
 	margin: 0;
-	font-size: calc(28px + 2.3vw);
+	/* font-size: calc(28px + 2.3vw); */
+	font-size: 250px;
 	font-weight: bold;
 	line-height: 1.2;
 	color: transparent;
+	/* font-family: 'Awake the Beauty', cursive; */
+
+	font-family: 'Pacifico', cursive;
 	-webkit-text-stroke: 1px #fff;
 	opacity: .8;
 	transition: color .3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+
+
+	.tt-phc-item-title {
+		font-size: 95px;
+	}
+
 }
 
 .tt-portfolio-hover-carousel .swiper-slide.active .tt-phc-item-title {

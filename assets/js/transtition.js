@@ -68,17 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
 const zoomText = document.querySelector(".zoom-text");
 const hidden = document.querySelector(".hidden-div");
 
-function zoomIn() {
-    zoomText.style.transform = "scale(1.2)";
+// function zoomIn() {
+//     zoomText.style.transform = "scale(1.2)";
 
-    zoomText.classList.add("text-stroke-light")
-    hidden.style.opacity = "1"
+//     zoomText.classList.add("text-stroke-light")
+//     hidden.style.opacity = "1"
 
-}
+// }
 
-function zoomOut() {
-    zoomText.style.transform = "scale(1)";
-    zoomText.classList.remove("text-stroke-light")
-    hidden.style.opacity = "0"
+// function zoomOut() {
+//     zoomText.style.transform = "scale(1)";
+//     zoomText.classList.remove("text-stroke-light")
+//     hidden.style.opacity = "0"
 
-}
+// }
