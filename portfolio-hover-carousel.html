@@ -28,6 +28,9 @@
 		rel="stylesheet"> <!-- Body font -->
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<!-- Secondary/Alter font -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
 
 	<!-- Libs and Plugins CSS -->
 	<link rel="stylesheet" href="assets/vendor/normalize/normalize.min.css">
@@ -55,6 +58,7 @@
 	* Use class "tt-magic-cursor" to enable magic cursor.
 	* Note: there may be classes that are specific to this page only!
 	-->
+
 
 <body id="body" class="tt-transition tt-boxed tt-magic-cursor">
 
@@ -464,14 +468,22 @@
 								data-simulate-touch="true"............(true/false)
 								data-grab-cursor="true"...............(true/false)
 						-->
+					<div class="" style="width: 100vw; height: 100vh; background-color: black;" id="first">
+						<video class="phc-video" loop muted preload="metadata" autoplay
+							style="width: 100vw; height: 100%;">
+							<source src="assets/vids/Intro.mp4" type="video/mp4">
+						</video>
+					</div>
 					<div class="tt-portfolio-hover-carousel cursor-drag-mouse-down" data-simulate-touch="true"
-						data-grab-cursor="true">
+						data-grab-cursor="true" id="second">
+
+
 
 						<!-- Begin swiper container -->
 						<div class="swiper">
 
 							<!-- Begin swiper wrapper (required) -->
-							<div class="swiper-wrapper" style="display: flex; justify-content: center; gap: -20rem;">
+							<div class="swiper-wrapper" style="display: flex; justify-content: center;">
 
 
 
@@ -481,15 +493,17 @@
 
 									<!-- Begin portfolio hover carousel item 
 										========================================= -->
-									<a href="single-project-3.html" class="tt-phc-item" data-cursor="She">
+									<button class=" tt-phc-item" data-bs-toggle="modal" data-bs-target="#sheModal"
+										data-cursor="She">
 										<h2 class="tt-phc-item-title">She</h2>
 										<!-- You may need to adjust the font size to suit your needs. -->
 										<div class="tt-phc-categories">
 											<div class="tt-phc-category"></div>
 											<!-- <div class="tt-phc-category">Varia</div> -->
 										</div> <!-- /.tt-phc-categories -->
-									</a>
+									</button>
 									<!-- End portfolio hover carousel item -->
+									<!-- Button trigger modal -->
 
 								</div>
 								<!-- End swiper slide -->
@@ -500,14 +514,15 @@
 
 									<!-- Begin portfolio hover carousel item 
 										========================================= -->
-									<a href="single-project-4.html" class="tt-phc-item" data-cursor="Me">
+									<button class="tt-phc-item" data-cursor="Me" data-bs-toggle="modal"
+										data-bs-target="#heModal">
 										<h2 class="tt-phc-item-title">me</h2>
 										<!-- You may need to adjust the font size to suit your needs. -->
 										<div class="tt-phc-categories">
 											<div class="tt-phc-category"></div>
 											<!-- <div class="tt-phc-category">Varia</div> -->
 										</div> <!-- /.tt-phc-categories -->
-									</a>
+									</button>
 									<!-- End portfolio hover carousel item -->
 
 								</div>
@@ -519,14 +534,15 @@
 
 									<!-- Begin portfolio hover carousel item 
 										========================================= -->
-									<a href="single-project-5.html" class="tt-phc-item" data-cursor="We">
+									<button class="tt-phc-item" data-cursor="We" data-bs-toggle="modal"
+										data-bs-target="#weModal">
 										<h2 class="tt-phc-item-title">we</h2>
 										<!-- You may need to adjust the font size to suit your needs. -->
 										<div class="tt-phc-categories">
 											<div class="tt-phc-category"></div>
 											<!-- <div class="tt-phc-category">Varia</div> -->
 										</div> <!-- /.tt-phc-categories -->
-									</a>
+									</button>
 									<!-- End portfolio hover carousel item -->
 
 								</div>
@@ -567,7 +583,7 @@
 
 									<video class="phc-video" loop muted preload="metadata"
 										poster="assets/vids/fashion-shoot.jpg">
-										<source src="assets/vids/Big Bang Explosion.mp4" type="video/mp4">
+										<source src="assets/vids/Intro.mp4" type="video/mp4">
 									</video>
 									<!-- <img src="https://youtu.be/hDcWqidxvz4" alt="image"> -->
 									<!-- <img src="assets/img/portfolio/1920/portfolio-3.jpg" alt="image"> -->
@@ -678,9 +694,97 @@
 		<!-- End scroll container -->
 
 
+
+		<!-- Modal -->
+		<div class="modal fade" id="sheModal" tabindex="-1" aria-labelledby="sheModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl">
+				<div class="modal-content bg-dark">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="sheModalLabel">She</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body bg-dark">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
+						accusamus maxime,
+						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
+						accusamus maxime,
+						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
+
+					</div>
+					<div class="modal-footer bg-dark">
+						<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="heModal" tabindex="-1" aria-labelledby="heModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl bg-dark">
+				<div class="modal-content bg-dark">
+					<div class="modal-header bg-dark">
+						<h1 class="modal-title fs-5" id="heModalLabel">He</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body bg-dark">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
+						accusamus maxime,
+						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
+						accusamus maxime,
+						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
+					</div>
+					<div class="modal-footer bg-dark">
+						<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="weModal" tabindex="-1" aria-labelledby="weModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl bg-dark">
+				<div class="modal-content bg-dark">
+					<div class="modal-header bg-dark">
+						<h1 class="modal-title fs-5" id="weModalLabel">We</h1>
+						<button type="button" class="btn-close text-white" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body bg-dark">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
+						accusamus maxime..
+						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
+						accusamus maxime,
+						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
+					</div>
+					<div class="modal-footer bg-dark">
+						<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 	<!-- End body inner -->
+	<script>
+		const first = document.getElementById('first');
+		const second = document.getElementById('second');
 
+
+		document.addEventListener('load', function () {
+			second.style.display = "none"
+			setTimeout(
+				function () {
+
+					first.style.display = "none";
+					second.style.display = "block";
+
+				}
+			)
+		}, 10000);
+	</script>
 
 
 
@@ -713,6 +817,9 @@
 
 	<!-- Template master JS -->
 	<script src="assets/js/theme.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+	</script>
 
 
 
