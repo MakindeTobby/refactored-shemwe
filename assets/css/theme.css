@@ -97,6 +97,12 @@
 	/* Add other font formats here if needed */
 }
 
+@font-face {
+	font-family: p;
+	src: url(../font/Better\ Together.otf);
+}
+
+
 /* ------------------------------------------------------------- *
  * General
 /* ------------------------------------------------------------- */
@@ -3584,6 +3590,17 @@ body.tt-boxed .tt-wrap .ttgr-height {
 	}
 }
 
+/* .she:hover {
+	color: rebeccapurple !important;
+
+}
+
+.she:hover .he {
+	color: rebeccapurple !important;
+
+
+} */
+
 /* layout-creative-2 */
 @media (min-width: 768px) {
 
@@ -6454,14 +6471,16 @@ body.tt-transition .tt-portfolio-hover-carousel.tt-phc-ready::before {
 	/* font-size: calc(28px + 2.3vw); */
 	font-size: 250px;
 	font-weight: bold;
-	line-height: 1.2;
+	/* line-height: 1.2; */
 	color: transparent;
 	/* font-family: 'Awake the Beauty', cursive; */
 
 	font-family: 'Pacifico', cursive;
+	/* font-family: 'p', cursive; */
 	-webkit-text-stroke: 1px #fff;
 	opacity: .8;
 	transition: color .3s ease-in-out;
+
 }
 
 @media (max-width: 768px) {
@@ -6640,7 +6659,7 @@ body.tt-light-bg-on .tt-phc-item-title {
 	-webkit-text-stroke: 1px #111;
 }
 
-body.tt-light-bg-on .tt-portfolio-hover-carousel .swiper-slide.active .tt-phc-item-title {
+body.tt-light-bg-on .tt-portfolio-hover-carousel .swiper-slide.active {
 	color: #111;
 	-webkit-text-stroke: 1px #111;
 }
