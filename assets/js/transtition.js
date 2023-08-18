@@ -82,3 +82,44 @@ const hidden = document.querySelector(".hidden-div");
 //     hidden.style.opacity = "0"
 
 // }
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const openPopupLink = document.querySelector('.button');
+//     const closePopupLink = document.querySelector('.popup__close');
+//     const popup = document.querySelector('.popup');
+
+//     openPopupLink.addEventListener('click', function (event) {
+//         event.preventDefault();
+//         popup.style.visibility = 'visible';
+//         popup.style.opacity = 1;
+//     });
+
+//     closePopupLink.addEventListener('click', function (event) {
+//         event.preventDefault();
+//         popup.style.visibility = 'hidden';
+//         popup.style.opacity = 0;
+//     });
+// });
+
+// script.js
+document.addEventListener('DOMContentLoaded', function () {
+    const openPopupLinks = document.querySelectorAll('.button');
+    const closePopupLinks = document.querySelectorAll('.popup__close');
+    const popups = document.querySelectorAll('.popup');
+
+    openPopupLinks.forEach((openPopupLink, index) => {
+        openPopupLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            popups[index].style.visibility = 'visible';
+            popups[index].style.opacity = 1;
+        });
+    });
+
+    closePopupLinks.forEach((closePopupLink, index) => {
+        closePopupLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            popups[index].style.visibility = 'hidden';
+            popups[index].style.opacity = 0;
+        });
+    });
+});

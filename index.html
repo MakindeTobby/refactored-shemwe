@@ -44,6 +44,7 @@
 
 	<!-- Template master CSS -->
 	<link rel="stylesheet" href="assets/css/helper.css">
+	<link rel="stylesheet" href="assets/assets/css/styles.css">
 	<link id="tt-themecss" rel="stylesheet" href="assets/css/theme.css">
 
 </head>
@@ -255,7 +256,7 @@
 
 								<!-- Begin swiper slide 
 									======================== -->
-								<div class="swiper-slide" data-slide="1">
+								<a class="swiper-slide button" data-slide="1" href="#popup-1">
 
 									<!-- Begin portfolio hover carousel item 
 										========================================= -->
@@ -271,23 +272,21 @@
 									<!-- End portfolio hover carousel item -->
 									<!-- Button trigger modal -->
 
-								</div>
+								</a>
 								<!-- End swiper slide -->
 								<!-- Begin swiper slide 
 									======================== -->
 								<div class="swiper-slide" data-slide="2">
-
 									<!-- Begin portfolio hover carousel item 
 										========================================= -->
-									<button class=" tt-phc-item" data-bs-toggle="modal" data-bs-target="#sheModal"
-										data-cursor="he">
-										<h2 class="tt-phc-item-title he">he</h2>
+									<a class="tt-phc-item" href="#popup-1" data-cursor="he">
+										<a class="tt-phc-item-title button" href="#popup-1">he</a>
 										<!-- You may need to adjust the font size to suit your needs. -->
 										<div class="tt-phc-categories">
 											<div class="tt-phc-category"></div>
 											<!-- <div class="tt-phc-category">Varia</div> -->
 										</div> <!-- /.tt-phc-categories -->
-									</button>
+									</a>
 									<!-- End portfolio hover carousel item -->
 									<!-- Button trigger modal -->
 
@@ -296,7 +295,7 @@
 
 								<!-- Begin swiper slide 
 									======================== -->
-								<div class="swiper-slide" data-slide="3">
+								<a class="swiper-slide button" data-slide="3" href="#popup-3">
 
 									<!-- Begin portfolio hover carousel item 
 										========================================= -->
@@ -311,12 +310,12 @@
 									</button>
 									<!-- End portfolio hover carousel item -->
 
-								</div>
+								</a>
 								<!-- End swiper slide -->
 
 								<!-- Begin swiper slide 
 									======================== -->
-								<div class="swiper-slide" data-slide="4">
+								<a class="swiper-slide button" data-slide="4" href="#popup-4">
 
 									<!-- Begin portfolio hover carousel item 
 										========================================= -->
@@ -331,7 +330,7 @@
 									</button>
 									<!-- End portfolio hover carousel item -->
 
-								</div>
+								</a>
 								<!-- End swiper slide -->
 
 
@@ -378,7 +377,7 @@
 								<!-- Add class "phc-image-is-light" if you use a very light image -->
 								<!-- Add class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". More info in the file "helper.css" (no effect with class "phc-image-is-light"). -->
 								<div class="phc-image cover-opacity-4" data-slide="3">
-									<img src="assets/img/blank.jpg" alt="image">
+									<img src="assets/img/glass-transparent-background-2.png" alt="image">
 
 
 									<!-- <img src="https://youtu.be/hDcWqidxvz4" alt="image"> -->
@@ -428,33 +427,7 @@
 				<!-- End page content -->
 
 
-				<!-- ======================
-					///// Begin tt-footer /////
-					=========================== -->
-				<footer id="tt-footer" class="footer-absolute">
-					<div class="tt-footer-inner">
 
-						<!-- Begin footer column 
-							========================= -->
-						<div class="footer-col tt-align-center-left">
-							<div class="footer-col-inner">
-
-								<!-- <a href="contact.html" class="tt-btn tt-btn-link">
-									<span class="tt-btn-icon"><i class="far fa-envelope"></i></span>
-									<div data-hover="Get in Touch">Get in Touch</div>
-								</a> -->
-
-							</div> <!-- /.footer-col-inner -->
-						</div>
-						<!-- Begin footer column -->
-
-						<!-- Begin footer column 
-							========================= -->
-
-						<!-- Begin footer column -->
-
-					</div> <!-- /.tt-section-inner -->
-				</footer>
 				<!-- End tt-footer -->
 
 
@@ -466,77 +439,72 @@
 
 
 
-		<!-- Modal -->
-		<div class="modal fade" id="sheModal" tabindex="-1" aria-labelledby="sheModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content bg-dark">
-					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="sheModalLabel">She</h1>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body bg-dark">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
-						accusamus maxime,
-						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
-						accusamus maxime,
-						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
+		<div class="popup" id="popup-1">
+			<div class="popup-inner">
+				<div class="popup__photo md-d-none ">
+					<img src="/assets/img/Pic.jpeg" alt="" width="100%" height="100%">
+				</div>
+				<div class="popup__text">
+					<h1>She</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non
+						vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam
+						sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci
+						varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget
+						felis sit amet eros viverra pulvinar.</p>
+				</div>
+				<a class="popup__close" href="#">X</a>
+			</div>
+		</div>
 
-					</div>
-					<div class="modal-footer bg-dark">
-						<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button> -->
-					</div>
+		<div class="popup" id="popup-2">
+			<div class="popup-inner">
+				<div class="popup__photo">
+					<img src="/assets/img/Pic.jpeg" alt="" width="100%" height="100%">
 				</div>
+				<div class="popup__text">
+					<h1>He</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non
+						vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam
+						sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci
+						varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget
+						felis sit amet eros viverra pulvinar.</p>
+				</div>
+				<a class="popup__close" href="#">X</a>
 			</div>
 		</div>
-		<!-- Modal -->
-		<div class="modal fade" id="heModal" tabindex="-1" aria-labelledby="heModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-xl bg-dark">
-				<div class="modal-content bg-dark">
-					<div class="modal-header bg-dark">
-						<h1 class="modal-title fs-5" id="heModalLabel">He</h1>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body bg-dark">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
-						accusamus maxime,
-						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
-						accusamus maxime,
-						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
-					</div>
-					<div class="modal-footer bg-dark">
-						<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button> -->
-					</div>
+		<div class="popup" id="popup-3">
+			<div class="popup-inner">
+				<div class="popup__photo">
+					<img src="/assets/img/Pic.jpeg" alt="" width="100%" height="100%">
 				</div>
+				<div class="popup__text">
+					<h1>Me</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non
+						vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam
+						sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci
+						varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget
+						felis sit amet eros viverra pulvinar.</p>
+				</div>
+				<a class="popup__close" href="#">X</a>
 			</div>
 		</div>
-		<!-- Modal -->
-		<div class="modal fade" id="weModal" tabindex="-1" aria-labelledby="weModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-xl bg-dark">
-				<div class="modal-content bg-dark">
-					<div class="modal-header bg-dark">
-						<h1 class="modal-title fs-5" id="weModalLabel">We</h1>
-						<button type="button" class="btn-close text-white" data-bs-dismiss="modal"
-							aria-label="Close"></button>
-					</div>
-					<div class="modal-body bg-dark">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
-						accusamus maxime..
-						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio itaque expedita eius
-						accusamus maxime,
-						quaerat nam possimus ipsa incidunt cum alias rerum dolorem unde natus, qui labore! Maxime, ad?
-					</div>
-					<div class="modal-footer bg-dark">
-						<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button> -->
-					</div>
+		<div class="popup" id="popup-4">
+			<div class="popup-inner">
+				<div class="popup__photo">
+					<img src="/assets/img/Pic.jpeg" alt="" width="100%" height="100%">
 				</div>
+				<div class="popup__text">
+					<h1>We</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non
+						vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam
+						sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci
+						varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget
+						felis sit amet eros viverra pulvinar.</p>
+				</div>
+				<a class="popup__close" href="#">X</a>
 			</div>
 		</div>
+
 	</main>
 	<!-- End body inner -->
 	<script>
@@ -588,6 +556,7 @@
 
 	<!-- Template master JS -->
 	<script src="assets/js/theme.js"></script>
+	<script src="assets/js/transtition.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
 	</script>
