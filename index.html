@@ -30,6 +30,7 @@
 	<!-- Secondary/Alter font -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/new.css">
 
 
 	<!-- Libs and Plugins CSS -->
@@ -41,6 +42,9 @@
 	<!-- Swiper CSS (https://swiperjs.com/) -->
 	<link rel="stylesheet" href="assets/vendor/lightgallery/css/lightgallery.min.css">
 	<!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<!-- Template master CSS -->
 	<link rel="stylesheet" href="assets/css/helper.css">
@@ -213,317 +217,175 @@
 			<!-- End header -->
 
 
-			<!-- *************************************
-				*********** Begin content wrap *********** 
-				************************************** -->
-			<div id="content-wrap">
+			<div class="dark-background">
+				<div class="loading-spinner"></div>
+			</div>
+			<audio id="background-audio" loop>
+				<source src="./assets/audio/shemewe.mpeg" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<div class="page page1 hidden">
+				<div class="img-container">
+					<img src="./assets/img/rotating star.gif" alt="GIF" class="img">
+					<div class="text-content">
 
 
-				<!-- *************************************
-					*********** Begin page content *********** 
-					************************************** -->
-				<div id="page-content">
-
-
-					<!-- ============================================================
-						///// Begin portfolio hover carousel (full screen carousel) /////
-						=================================================================
-						* IMPORTANT: The portfolio hover carousel is a standalone element. Do not add other template elements to this page!!!
-						* Use class "cursor-drag-mouse-down" to enable cursor drag style on mouse down (data-simulate-touch attribute must be enabled).
-						* Available data attributes:
-								data-loop="true"......................(true/false)
-								data-simulate-touch="true"............(true/false)
-								data-grab-cursor="true"...............(true/false)
-						-->
-					<div class="" style="width: 100vw; height: 100vh; background-color: black;" id="first">
-						<video class="phc-video" loop muted preload="metadata" autoplay
-							style="width: 100vw; height: 100%;">
-							<source src="assets/vids/Intro.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div class="tt-portfolio-hover-carousel cursor-drag-mouse-down" data-simulate-touch="true"
-						data-grab-cursor="true" id="second">
-
-
-
-						<!-- Begin swiper container -->
-						<div class="swiper">
-
-							<!-- Begin swiper wrapper (required) -->
-							<div class="swiper-wrapper" style="display: flex; justify-content: center;">
-
-
-
-								<!-- Begin swiper slide 
-									======================== -->
-								<a class="swiper-slide button" data-slide="1" href="#popup-1">
-
-									<!-- Begin portfolio hover carousel item 
-										========================================= -->
-									<button class=" tt-phc-item" data-bs-toggle="modal" data-bs-target="#sheModal"
-										data-cursor="She">
-										<h2 class="tt-phc-item-title she">s</h2>
-										<!-- You may need to adjust the font size to suit your needs. -->
-										<div class="tt-phc-categories">
-											<div class="tt-phc-category"></div>
-											<!-- <div class="tt-phc-category">Varia</div> -->
-										</div> <!-- /.tt-phc-categories -->
-									</button>
-									<!-- End portfolio hover carousel item -->
-									<!-- Button trigger modal -->
-
-								</a>
-								<!-- End swiper slide -->
-								<!-- Begin swiper slide 
-									======================== -->
-								<div class="swiper-slide" data-slide="2">
-									<!-- Begin portfolio hover carousel item 
-										========================================= -->
-									<a class="tt-phc-item" href="#popup-1" data-cursor="he">
-										<a class="tt-phc-item-title button" href="#popup-1">he</a>
-										<!-- You may need to adjust the font size to suit your needs. -->
-										<div class="tt-phc-categories">
-											<div class="tt-phc-category"></div>
-											<!-- <div class="tt-phc-category">Varia</div> -->
-										</div> <!-- /.tt-phc-categories -->
-									</a>
-									<!-- End portfolio hover carousel item -->
-									<!-- Button trigger modal -->
-
-								</div>
-								<!-- End swiper slide -->
-
-								<!-- Begin swiper slide 
-									======================== -->
-								<a class="swiper-slide button" data-slide="3" href="#popup-3">
-
-									<!-- Begin portfolio hover carousel item 
-										========================================= -->
-									<button class="tt-phc-item" data-cursor="Me" data-bs-toggle="modal"
-										data-bs-target="#heModal">
-										<h2 class="tt-phc-item-title">me</h2>
-										<!-- You may need to adjust the font size to suit your needs. -->
-										<div class="tt-phc-categories">
-											<div class="tt-phc-category"></div>
-											<!-- <div class="tt-phc-category">Varia</div> -->
-										</div> <!-- /.tt-phc-categories -->
-									</button>
-									<!-- End portfolio hover carousel item -->
-
-								</a>
-								<!-- End swiper slide -->
-
-								<!-- Begin swiper slide 
-									======================== -->
-								<a class="swiper-slide button" data-slide="4" href="#popup-4">
-
-									<!-- Begin portfolio hover carousel item 
-										========================================= -->
-									<button class="tt-phc-item" data-cursor="We" data-bs-toggle="modal"
-										data-bs-target="#weModal">
-										<h2 class="tt-phc-item-title">wé</h2>
-										<!-- You may need to adjust the font size to suit your needs. -->
-										<div class="tt-phc-categories">
-											<div class="tt-phc-category"></div>
-											<!-- <div class="tt-phc-category">Varia</div> -->
-										</div> <!-- /.tt-phc-categories -->
-									</button>
-									<!-- End portfolio hover carousel item -->
-
-								</a>
-								<!-- End swiper slide -->
-
-
-
-
-
-
-
-
+						<div class="img_txt">
+							<div class="bg left pointer">
+								<a href="#" class="p pointer she" data-section="section1" onclick="gotoSection1()"
+									data-cursor="She">s</a>
 							</div>
-							<!-- End swiper wrapper -->
+							<div class="bg left pointer">
+								<a href="#" class="p pointer he" data-section="section2" onclick="gotoSection2()"
+									data-cursor="He">he</a>
+							</div>
+							<div class="bg right ">
+								<a href="#" class="p pointer me" data-section="section3" onclick="gotoSection3()"
+									data-cursor="Me">me</a>
+							</div>
+							<div class="bg right we">
+								<a href="#" class="p pointer we" data-section="section4" onclick="gotoSection4()"
+									data-cursor="We">wé</a>
+							</div>
+						</div>
+
+						<div class="containerr">
+							<div class="icon">
+								<!-- <div class="imgBx active" style="--i:1;">
+						<img src="./media/1.jpeg" alt="">
+					  </div> -->
+								<div class="imgBx" style="--i:2;">
+									<img src="./assets/img/planet/mercury.jpg" alt="">
+								</div>
+								<!-- <div class="imgBx" style="--i:3;">
+						<img src="./media/1.jpeg" alt="">
+					  </div>
+					  <div class="imgBx" style="--i:4;">
+						<img src="./media/1.jpeg" alt="">
+					  </div>
+					  <div class="imgBx" style="--i:5;">
+						<img src="./media/1.jpeg" alt="">
+					  </div> -->
+								<div class="imgBx" style="--i:6;" data-cursor="About">
+									<img src="./assets/img/planet/mars.jpg" alt="">
+								</div>
+								<div class="imgBx" style="--i:7;">
+									<img src="./assets/img/planet/moon.jpg" alt="">
+								</div>
+								<div class="imgBx" style="--i:8;">
+									<img src="./assets/img/planet/sun.jpg" alt="">
+								</div>
+							</div>
+							<!-- <div class="content d-none">
+			  
+					  </div>
+		  
+			   -->
+							<!-- <div class="new"> -->
+
+
+							<!-- </div> -->
 
 						</div>
-						<!-- End swiper container -->
-
-
-						<!-- Begin portfolio hover carousel images 
-							=========================================== 
-							* IMPORTANT: Make sure the items match the slides (data-slide="*") in the "tt-portfolio-hover-carousel" above!!!
-							-->
-						<div class="tt-portfolio-hover-carousel-images">
-							<div class="phc-images-inner">
-
-
-								<!-- Add class "phc-image-is-light" if you use a very light image -->
-								<!-- Add class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". More info in the file "helper.css" (no effect with class "phc-image-is-light"). -->
-								<div class="phc-image cover-opacity-4" data-slide="1">
-
-									<video class="phc-video" loop muted preload="metadata">
-										<source src="assets/vids/water.mp4" type="video/mp4">
-									</video>
-								</div>
-
-								<!-- Add class "phc-image-is-light" if you use a very light image -->
-								<!-- Add class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". More info in the file "helper.css" (no effect with class "phc-image-is-light"). -->
-								<div class="phc-image cover-opacity-4" data-slide="2">
-
-									<video class="phc-video" loop muted preload="metadata">
-										<source src="assets/vids/fire_compressed.mp4" type="video/mp4">
-									</video>
-									<!-- <img src="https://youtu.be/hDcWqidxvz4" alt="image"> -->
-									<!-- <img src="assets/img/portfolio/1920/portfolio-3.jpg" alt="image"> -->
-								</div>
-								<!-- Add class "phc-image-is-light" if you use a very light image -->
-								<!-- Add class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". More info in the file "helper.css" (no effect with class "phc-image-is-light"). -->
-								<div class="phc-image cover-opacity-4" data-slide="3">
-									<img src="assets/img/glass-transparent-background-2.png" alt="image">
-
-
-									<!-- <img src="https://youtu.be/hDcWqidxvz4" alt="image"> -->
-									<!-- <img src="assets/img/portfolio/1920/portfolio-3.jpg" alt="image"> -->
-								</div>
-
-								<!-- Add class "phc-image-is-light" if you use a very light image -->
-								<!-- Add class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". More info in the file "helper.css" (no effect with class "phc-image-is-light"). -->
-								<div class="phc-image cover-opacity-4" data-slide="4">
-									<video class="phc-video" loop muted preload="metadata">
-										<source src="assets/vids/people walking a street-edited.mp4" type="video/mp4">
-									</video>
-								</div>
-
-
-
-							</div> <!-- /.phc-images-inner -->
-						</div>
-						<!-- End portfolio hover carousel images -->
-
-
-						<!-- Begin portfolio hover carousel counter 
-							============================================ 
-							* IMPORTANT: Make sure the items match the slides (data-slide="*") in the "tt-portfolio-hover-carousel" above!!!
-							-->
-						<!-- <div class="tt-phc-counter tt-swiper-nav">
-							<div class="tt-phc-count">
-								<span data-slide="1">1</span>
-								<span data-slide="2">2</span>
-								<span data-slide="3">3</span>
-								<span data-slide="4">4</span>
-								<span data-slide="5">5</span>
-								<span data-slide="6">6</span>
-								<span data-slide="7">7</span>
-								<span data-slide="8">8</span>
-								<span data-slide="9">9</span>
-							</div>
-							<div class="tt-phc-counter-separator"></div>
-						</div> -->
-						<!-- End portfolio hover carousel navigation -->
-
+						<button class="play-btn"><i class="fas fa-volume-up"></i></button>
+						<p class="txt-bottom">
+						</p>
 					</div>
-					<!-- End portfolio hover carousel -->
-
-
 				</div>
-				<!-- End page content -->
-
-
-
-				<!-- End tt-footer -->
-
-
 			</div>
-			<!-- End content wrap -->
+			<div class="page page2 hidden" id="section1">
+				<div class="img-container">
+					<video autoplay loop muted class="img">
+						<source src="./assets/vids/water.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
 
-		</div>
-		<!-- End scroll container -->
+					<div class="v_container">
+						<div class="left-side">
+							<div class="tv">
+								<div class="bg">She</div>
+							</div>
+							<div class="text-container">
 
+							</div>
+						</div>
+						<div class="right-side">
+							<a href="#" onclick="gotoSection()"><i class="fa-solid fa-house"></i></a>
+						</div>
+					</div>
 
-
-		<div class="popup" id="popup-1">
-			<div class="popup-inner">
-				<div class="popup__photo md-d-none ">
-					<img src="/assets/img/Pic.jpeg" alt="" width="100%" height="100%">
 				</div>
-				<div class="popup__text">
-					<h1>She</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non
-						vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam
-						sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci
-						varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget
-						felis sit amet eros viverra pulvinar.</p>
-				</div>
-				<a class="popup__close" href="#">X</a>
 			</div>
-		</div>
+			<div class="page page3 hidden" id="section2">
+				<div class="img-container">
+					<video autoplay loop muted class="img">
+						<source src="./assets/vids/fire_compressed.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<div class="v_container">
+						<div class="left-side">
+							<div class="tv">
+								<div class="bg">He</div>
+							</div>
+							<div class="text-container">
 
-		<div class="popup" id="popup-2">
-			<div class="popup-inner">
-				<div class="popup__photo">
-					<img src="/assets/img/Pic.jpeg" alt="" width="100%" height="100%">
+							</div>
+						</div>
+						<div class="right-side">
+							<a href="#" onclick="gotoSection()"><i class="fa-solid fa-house"></i></a>
+						</div>
+					</div>
 				</div>
-				<div class="popup__text">
-					<h1>He</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non
-						vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam
-						sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci
-						varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget
-						felis sit amet eros viverra pulvinar.</p>
-				</div>
-				<a class="popup__close" href="#">X</a>
 			</div>
-		</div>
-		<div class="popup" id="popup-3">
-			<div class="popup-inner">
-				<div class="popup__photo">
-					<img src="/assets/img/Pic.jpeg" alt="" width="100%" height="100%">
+			<div class="page page4 hidden" id="section3">
+				<div class="img-container">
+					<img src="./assets/img/blank.jpg" alt="blank" class="img">
+					<div class="v_container">
+						<div class="left-side">
+							<div class="tv">
+								<div class="bg">Me</div>
+							</div>
+							<div class="text-container">
+
+							</div>
+						</div>
+						<div class="right-side">
+							<a href="#" onclick="gotoSection()"> <i class="fa-solid fa-house"></i></a>
+						</div>
+					</div>
+
 				</div>
-				<div class="popup__text">
-					<h1>Me</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non
-						vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam
-						sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci
-						varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget
-						felis sit amet eros viverra pulvinar.</p>
-				</div>
-				<a class="popup__close" href="#">X</a>
 			</div>
-		</div>
-		<div class="popup" id="popup-4">
-			<div class="popup-inner">
-				<div class="popup__photo">
-					<img src="/assets/img/Pic.jpeg" alt="" width="100%" height="100%">
+
+			<div class="page page5 hidden" id="section4">
+				<div class="img-container">
+					<video autoplay loop muted class="img">
+						<source src="./assets/vids/people walking a street-edited.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+
+					<div class="v_container">
+						<div class="left-side">
+							<div class="tv">
+								<div class="bg">We</div>
+							</div>
+							<div class="text-container">
+
+							</div>
+						</div>
+						<div class="right-side">
+							<a href="#" onclick="gotoSection()"> <i class="fa-solid fa-house"></i></a>
+						</div>
+					</div>
 				</div>
-				<div class="popup__text">
-					<h1>We</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non
-						vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam
-						sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci
-						varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget
-						felis sit amet eros viverra pulvinar.</p>
-				</div>
-				<a class="popup__close" href="#">X</a>
 			</div>
-		</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+			<script src="script.js"></script>
+
 
 	</main>
 	<!-- End body inner -->
-	<script>
-		const first = document.getElementById('first');
-		const second = document.getElementById('second');
 
-
-		document.addEventListener('load', function () {
-			second.style.display = "none"
-			setTimeout(
-				function () {
-
-					first.style.display = "none";
-					second.style.display = "block";
-
-				}
-			)
-		}, 10000);
-	</script>
 
 
 
@@ -556,6 +418,7 @@
 
 	<!-- Template master JS -->
 	<script src="assets/js/theme.js"></script>
+	<script src="assets/js/new.js"></script>
 	<script src="assets/js/transtition.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
