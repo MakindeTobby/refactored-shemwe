@@ -173,18 +173,18 @@ function gotoSection() {
 // });
 
 
-// // Get the elements for "s" and "he"
-// const sElement = document.querySelector('.she');
-// const heElement = document.querySelector('.he');
+// Get the elements for "s" and "he"
+const sElement = document.querySelector('.she');
+const heElement = document.querySelector('.he');
 
-// // Add hover event listener to "s" element
-// sElement.addEventListener('mouseover', () => {
-//     // Add the color-change class to "he" element
-//     heElement.classList.add('color-change');
-// });
+// Add hover event listener to "s" element
+sElement.addEventListener('mouseover', () => {
+    // Add the color-change class to "he" element
+    heElement.classList.add('color-change');
+});
 
-// sElement.addEventListener('mouseout', () => {
-//     // Remove the color-change class from "he" element
-//     heElement.classList.remove('color-change');
-// });
+sElement.addEventListener('mouseout', () => {
+    // Remove the color-change class from "he" element
+    heElement.classList.remove('color-change');
+});
 
